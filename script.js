@@ -1,6 +1,13 @@
+function solveProblem() {
+  const problem = document.getElementById("problem").value;
+  const answer = document.getElementById("answer");
 
-console.log("HeliosAI is loading...");
+  if (problem.trim() === "") {
+    answer.innerHTML = "Please enter a math problem first.";
+    return;
+  }
 
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Welcome to HeliosAI!");
-});
+  answer.innerHTML = 
+    "HeliosAI received: " + problem + "<br><br>" +
+    "Solution engine coming online...";
+}
