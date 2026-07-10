@@ -1,3 +1,8 @@
+alert("NEW HELIOS VERSION LOADED");
+
+function solveProblem() {
+  document.getElementById("answer").innerHTML = "Button works!";
+}
 
 function solveProblem() {
   document.getElementById("answer").innerHTML = "Button works! Reading input...";
