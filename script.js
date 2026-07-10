@@ -1,5 +1,13 @@
 function solveProblem() {
   let problem = document.getElementById("problem").value;
 
-  document.getElementById("answer").innerHTML = "Testing: " + problem;
+  let answer;
+
+  try {
+    answer = eval(problem);
+  } catch (error) {
+    answer = "I couldn't solve that yet.";
+  }
+
+  document.getElementById("answer").innerHTML = "Answer: " + answer;
 }
