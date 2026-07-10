@@ -3,18 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HeliosAI</title>
-
+  <title>HeliosAI Math Tutor</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>☀️ HeliosAI</h1>
-    <p>The AI-powered learning platform that helps you understand—not just memorize.</p>
-    <a href="#" class="button">Coming Soon</a>
-  </header>
+<header>
+  <h1>☀️ HeliosAI</h1>
+  <p>Your AI-powered math tutor</p>
 
-  <script src="script.js"></script>
+  <div class="solver">
+    <input id="problem" type="text" placeholder="Enter a math problem...">
+
+    <button onclick="solveProblem()">
+      Solve
+    </button>
+
+    <div id="answer">
+      Your solution will appear here.
+    </div>
+  </div>
+
+</header>
+
+<script src="script.js"></script>
+
 </body>
 </html>
