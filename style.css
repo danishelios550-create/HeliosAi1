@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -8,31 +7,52 @@ body {
 }
 
 header {
-  padding: 100px 20px;
+  padding: 60px 20px;
 }
 
 h1 {
-  font-size: 3.5rem;
-  margin-bottom: 10px;
+  font-size: 3rem;
 }
 
 p {
   font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto 30px;
 }
 
-.button {
-  display: inline-block;
-  padding: 15px 30px;
-  background: gold;
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
+.solver {
+  margin: 40px auto;
+  max-width: 500px;
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+input {
+  width: 90%;
+  padding: 15px;
+  font-size: 1rem;
   border-radius: 8px;
-  transition: 0.3s;
+  border: none;
+  margin-bottom: 15px;
 }
 
-.button:hover {
+button {
+  padding: 15px 35px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: gold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
   background: orange;
+}
+
+#answer {
+  margin-top: 25px;
+  padding: 15px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 8px;
+  min-height: 30px;
 }
