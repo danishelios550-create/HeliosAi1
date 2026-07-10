@@ -1,14 +1,8 @@
-alert("NEW HELIOS VERSION LOADED");
-
 function solveProblem() {
-  document.getElementById("answer").innerHTML = "Button works!";
-}
-
-function solveProblem() {
-  document.getElementById("answer").innerHTML = "Button works! Reading input...";
+  alert("HeliosAI connected!");
 
   let problem = document.getElementById("problem").value;
 
   document.getElementById("answer").innerHTML =
-    "You typed: " + problem;
+    "You entered: " + problem;
 }
