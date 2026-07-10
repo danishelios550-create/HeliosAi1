@@ -1,32 +1,25 @@
+function solveProblem() {
+  const problem = document.getElementById("problem").value;
+  const answerBox = document.getElementById("answer");
 
-const button = document.getElementById("solveButton");
-const input = document.getElementById("problemInput");
-const output = document.getElementById("output");
-
-button.addEventListener("click", function () {
-  const problem = input.value.trim();
-
-  if (problem === "") {
-    output.innerHTML = "Please enter a math problem.";
+  if (problem.trim() === "") {
+    answerBox.innerHTML = "Please enter a math problem.";
     return;
   }
 
-  let answer;
-
   try {
-    // Basic calculator engine
-    answer = eval(problem);
+    const answer = eval(problem);
 
-    output.innerHTML = `
+    answerBox.innerHTML = `
       <h3>Solution:</h3>
       <p>${problem} = ${answer}</p>
-      <p>HeliosAI is calculating step-by-step explanations next.</p>
+      <p>HeliosAI is ready for more advanced reasoning.</p>
     `;
   } catch (error) {
-    output.innerHTML = `
+    answerBox.innerHTML = `
       <h3>HeliosAI:</h3>
-      <p>I couldn't solve that yet. Try a simpler expression like:</p>
-      <p>2+2 or 5*7</p>
+      <p>I couldn't solve that yet.</p>
+      <p>Try something like: 2+2 or 5*7</p>
     `;
   }
-});
+}
