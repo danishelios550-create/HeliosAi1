@@ -1,8 +1,13 @@
 function solveProblem() {
-  alert("HeliosAI connected!");
-
   let problem = document.getElementById("problem").value;
 
-  document.getElementById("answer").innerHTML =
-    "You entered: " + problem;
+  try {
+    let answer = eval(problem);
+
+    document.getElementById("answer").innerHTML =
+      "Solution: " + answer;
+  } catch (error) {
+    document.getElementById("answer").innerHTML =
+      "I couldn't solve that yet.";
+  }
 }
