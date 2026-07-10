@@ -7,7 +7,16 @@ function solveProblem() {
     return;
   }
 
-  answer.innerHTML = 
-    "HeliosAI received: " + problem + "<br><br>" +
-    "Solution engine coming online...";
+  try {
+    const result = eval(problem);
+
+    answer.innerHTML =
+      "HeliosAI solved:<br><br>" +
+      problem +
+      " = " +
+      result;
+  } catch {
+    answer.innerHTML =
+      "HeliosAI is still learning this type of problem.";
+  }
 }
